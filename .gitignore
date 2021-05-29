@@ -1,0 +1,8 @@
+# Environment and configuration
+.idea
+.venv
+venv
+.eggs
+*.egg-info/
+db.sqlite3
+__pycache__/

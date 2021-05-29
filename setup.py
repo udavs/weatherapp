@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+from setuptools import setup, find_packages
+
+setup(
+    name="weather-app",
+    description="Simple weather app",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    author="Darja",
+    author_email="udavdash@gmail.com",
+    packages=find_packages(exclude=("tests*",)),
+    install_requires=[
+        "asgiref",
+        "certifi",
+        "chardet",
+        "Django",
+        "idna",
+        "pytz",
+        "jmespath",
+        "requests",
+        "sqlparse",
+        "urllib3",
+    ],
+    python_requires=">=3.6",
+    setup_requires=["pytest-runner"],
+    tests_require=["pytest", "pytest-django", "requests-mock"],
+    zip_safe=False,
+    classifiers=[
+        "Framework :: Django",
+        "Framework :: Django :: 1.11",
+        "Framework :: Django :: 2.0",
+        "Framework :: Django :: 2.1",
+        "Framework :: Django :: 2.2",
+        "Framework :: Django :: 3.0",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3.4",
+        "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+    ],
+)
